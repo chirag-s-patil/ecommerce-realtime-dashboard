@@ -1,0 +1,71 @@
+[0m01:28:58.385415 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EC067DBE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EC1195A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EC27EBED0>]}
+
+
+============================== 01:28:58.393796 | 716ff248-fbd3-42be-9882-8fd7e5151269 ==============================
+[0m01:28:58.393796 [info ] [MainThread]: Running with dbt=1.10.15
+[0m01:28:58.394921 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'None', 'quiet': 'False', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'log_path': 'logs', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': 'C:\\Users\\Chirag\\.dbt'}
+[0m01:28:58.432790 [info ] [MainThread]: dbt version: 1.10.15
+[0m01:28:58.433445 [info ] [MainThread]: python version: 3.13.3
+[0m01:28:58.434031 [info ] [MainThread]: python path: C:\Users\Chirag\AppData\Local\Programs\Python\Python313\python.exe
+[0m01:28:58.434567 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m01:28:58.665355 [info ] [MainThread]: Using profiles dir at C:\Users\Chirag\.dbt
+[0m01:28:58.666268 [info ] [MainThread]: Using profiles.yml file at C:\Users\Chirag\.dbt\profiles.yml
+[0m01:28:58.666997 [info ] [MainThread]: Using dbt_project.yml file at D:\Timepass Projects\Ecommerce Realtime\dbt_project.yml
+[0m01:28:58.690373 [info ] [MainThread]: adapter type: duckdb
+[0m01:28:58.691027 [info ] [MainThread]: adapter version: 1.10.0
+[0m01:28:58.691639 [info ] [MainThread]: Configuration:
+[0m01:28:58.692157 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m01:28:58.692696 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m01:28:58.693305 [info ] [MainThread]: Required dependencies:
+[0m01:28:58.693879 [debug] [MainThread]: Executing "git --help"
+[0m01:28:58.706318 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m01:28:58.707120 [info ] [MainThread]: Connection:
+[0m01:28:58.707705 [info ] [MainThread]:   database: ecommerce
+[0m01:28:58.708245 [info ] [MainThread]:   schema: main
+[0m01:28:58.708783 [info ] [MainThread]:   path: D:/Timepass Projects/Ecommerce Realtime/duckdb/ecommerce.duckdb
+[0m01:28:58.709323 [info ] [MainThread]:   config_options: None
+[0m01:28:58.710739 [info ] [MainThread]:   extensions: None
+[0m01:28:58.711307 [info ] [MainThread]:   settings: {}
+[0m01:28:58.712582 [info ] [MainThread]:   external_root: .
+[0m01:28:58.713168 [info ] [MainThread]:   use_credential_provider: None
+[0m01:28:58.713734 [info ] [MainThread]:   attach: None
+[0m01:28:58.714269 [info ] [MainThread]:   filesystems: None
+[0m01:28:58.714894 [info ] [MainThread]:   remote: None
+[0m01:28:58.715515 [info ] [MainThread]:   plugins: None
+[0m01:28:58.716222 [info ] [MainThread]:   disable_transactions: False
+[0m01:28:58.717323 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m01:28:59.115643 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m01:29:02.822548 [debug] [MainThread]: Using duckdb connection "debug"
+[0m01:29:02.822982 [debug] [MainThread]: On debug: select 1 as id
+[0m01:29:02.823311 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m01:29:02.849466 [debug] [MainThread]: SQL status: OK in 0.026 seconds
+[0m01:29:02.850588 [debug] [MainThread]: On debug: Close
+[0m01:29:02.851264 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m01:29:02.851993 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m01:29:02.852522 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <D:\Timepass Projects\Ecommerce Realtime\dbt_project.yml> not found
+
+[0m01:29:02.853152 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH and that the user has permissions to run it: "git"
+
+[0m01:29:02.854921 [debug] [MainThread]: Command `dbt debug` failed at 01:29:02.854720 after 4.66 seconds
+[0m01:29:02.855347 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m01:29:02.855756 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EC29F3490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EC2A0FE30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022EC2866F10>]}
+[0m01:29:02.856284 [debug] [MainThread]: Flushing usage events
+[0m01:29:04.203545 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:33:43.552824 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B7914E97F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B791FF1810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B792643ED0>]}
+
+
+============================== 01:33:43.558827 | f73b05cd-8add-4412-8079-8597d9d0c3b5 ==============================
+[0m01:33:43.558827 [info ] [MainThread]: Running with dbt=1.10.15
+[0m01:33:43.559903 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'profiles_dir': 'C:\\Users\\Chirag\\.dbt', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'False', 'printer_width': '80', 'quiet': 'False', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs', 'write_json': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m01:33:43.560512 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path D:\Timepass Projects\Ecommerce Realtime\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m01:33:43.561937 [debug] [MainThread]: Command `dbt run` failed at 01:33:43.561766 after 0.24 seconds
+[0m01:33:43.562374 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B7926762C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B7926A8B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B7924F7130>]}
+[0m01:33:43.562814 [debug] [MainThread]: Flushing usage events
+[0m01:33:44.873081 [debug] [MainThread]: An error was encountered while trying to flush usage events

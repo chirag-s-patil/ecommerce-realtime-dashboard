@@ -1,0 +1,990 @@
+[0m01:31:29.975085 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA379497F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA38451810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA38A9FED0>]}
+
+
+============================== 01:31:29.981114 | 93d30953-d102-46ef-a281-cdea483ae7be ==============================
+[0m01:31:29.981114 [info ] [MainThread]: Running with dbt=1.10.15
+[0m01:31:29.982038 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt debug', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'quiet': 'False', 'printer_width': '80', 'empty': 'None', 'log_path': 'D:\\Timepass Projects\\Ecommerce Realtime\\dbt\\logs', 'indirect_selection': 'eager', 'profiles_dir': 'C:\\Users\\Chirag\\.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True'}
+[0m01:31:30.019504 [info ] [MainThread]: dbt version: 1.10.15
+[0m01:31:30.020138 [info ] [MainThread]: python version: 3.13.3
+[0m01:31:30.020715 [info ] [MainThread]: python path: C:\Users\Chirag\AppData\Local\Programs\Python\Python313\python.exe
+[0m01:31:30.021224 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m01:31:30.173926 [info ] [MainThread]: Using profiles dir at C:\Users\Chirag\.dbt
+[0m01:31:30.174695 [info ] [MainThread]: Using profiles.yml file at C:\Users\Chirag\.dbt\profiles.yml
+[0m01:31:30.175268 [info ] [MainThread]: Using dbt_project.yml file at D:\Timepass Projects\Ecommerce Realtime\dbt\dbt_project.yml
+[0m01:31:30.178804 [info ] [MainThread]: adapter type: duckdb
+[0m01:31:30.179450 [info ] [MainThread]: adapter version: 1.10.0
+[0m01:31:30.316811 [info ] [MainThread]: Configuration:
+[0m01:31:30.317552 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m01:31:30.318093 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m01:31:30.318635 [info ] [MainThread]: Required dependencies:
+[0m01:31:30.319223 [debug] [MainThread]: Executing "git --help"
+[0m01:31:30.329091 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m01:31:30.329763 [info ] [MainThread]: Connection:
+[0m01:31:30.330344 [info ] [MainThread]:   database: ecommerce
+[0m01:31:30.330885 [info ] [MainThread]:   schema: main
+[0m01:31:30.331541 [info ] [MainThread]:   path: D:/Timepass Projects/Ecommerce Realtime/duckdb/ecommerce.duckdb
+[0m01:31:30.332144 [info ] [MainThread]:   config_options: None
+[0m01:31:30.332698 [info ] [MainThread]:   extensions: None
+[0m01:31:30.333234 [info ] [MainThread]:   settings: {}
+[0m01:31:30.333775 [info ] [MainThread]:   external_root: .
+[0m01:31:30.334335 [info ] [MainThread]:   use_credential_provider: None
+[0m01:31:30.334928 [info ] [MainThread]:   attach: None
+[0m01:31:30.335481 [info ] [MainThread]:   filesystems: None
+[0m01:31:30.336042 [info ] [MainThread]:   remote: None
+[0m01:31:30.336687 [info ] [MainThread]:   plugins: None
+[0m01:31:30.338057 [info ] [MainThread]:   disable_transactions: False
+[0m01:31:30.338941 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m01:31:30.703708 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m01:31:30.783419 [debug] [MainThread]: Using duckdb connection "debug"
+[0m01:31:30.783851 [debug] [MainThread]: On debug: select 1 as id
+[0m01:31:30.784181 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m01:31:30.821654 [debug] [MainThread]: SQL status: OK in 0.037 seconds
+[0m01:31:30.823675 [debug] [MainThread]: On debug: Close
+[0m01:31:30.824558 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m01:31:30.825430 [info ] [MainThread]: [31m1 check failed:[0m
+[0m01:31:30.826209 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH and that the user has permissions to run it: "git"
+
+[0m01:31:30.828055 [debug] [MainThread]: Command `dbt debug` failed at 01:31:30.827854 after 1.11 seconds
+[0m01:31:30.828489 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m01:31:30.828894 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA3A0855B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA39DC7410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FA38B57680>]}
+[0m01:31:30.829497 [debug] [MainThread]: Flushing usage events
+[0m01:31:32.152920 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:54:01.370177 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CE96B3C830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CE97324A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CE97973ED0>]}
+
+
+============================== 01:54:01.376190 | 5ce48990-257b-4397-bf25-09c37e29acc8 ==============================
+[0m01:54:01.376190 [info ] [MainThread]: Running with dbt=1.10.15
+[0m01:54:01.377076 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'invocation_command': 'dbt debug', 'no_print': 'None', 'profiles_dir': 'C:\\Users\\Chirag\\.dbt', 'cache_selected_only': 'False', 'warn_error': 'None', 'indirect_selection': 'eager', 'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'log_path': 'D:\\Timepass Projects\\Ecommerce Realtime\\dbt\\logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'version_check': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'use_colors': 'True', 'printer_width': '80', 'target_path': 'None'}
+[0m01:54:01.410820 [info ] [MainThread]: dbt version: 1.10.15
+[0m01:54:01.411533 [info ] [MainThread]: python version: 3.13.3
+[0m01:54:01.412100 [info ] [MainThread]: python path: D:\Timepass Projects\Ecommerce Realtime\.venv\Scripts\python.exe
+[0m01:54:01.412633 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m01:54:01.574310 [info ] [MainThread]: Using profiles dir at C:\Users\Chirag\.dbt
+[0m01:54:01.575217 [info ] [MainThread]: Using profiles.yml file at C:\Users\Chirag\.dbt\profiles.yml
+[0m01:54:01.576352 [info ] [MainThread]: Using dbt_project.yml file at D:\Timepass Projects\Ecommerce Realtime\dbt\dbt_project.yml
+[0m01:54:01.598601 [info ] [MainThread]: adapter type: duckdb
+[0m01:54:01.599249 [info ] [MainThread]: adapter version: 1.10.0
+[0m01:54:01.755159 [info ] [MainThread]: Configuration:
+[0m01:54:01.755793 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m01:54:01.756460 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m01:54:01.756950 [info ] [MainThread]: Required dependencies:
+[0m01:54:01.757581 [debug] [MainThread]: Executing "git --help"
+[0m01:54:01.766020 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m01:54:01.766821 [info ] [MainThread]: Connection:
+[0m01:54:01.767608 [info ] [MainThread]:   database: ecommerce
+[0m01:54:01.769027 [info ] [MainThread]:   schema: main
+[0m01:54:01.771977 [info ] [MainThread]:   path: D:/Timepass Projects/Ecommerce Realtime/duckdb/ecommerce.duckdb
+[0m01:54:01.773483 [info ] [MainThread]:   config_options: None
+[0m01:54:01.774162 [info ] [MainThread]:   extensions: None
+[0m01:54:01.774845 [info ] [MainThread]:   settings: {}
+[0m01:54:01.776009 [info ] [MainThread]:   external_root: .
+[0m01:54:01.776748 [info ] [MainThread]:   use_credential_provider: None
+[0m01:54:01.777349 [info ] [MainThread]:   attach: None
+[0m01:54:01.778315 [info ] [MainThread]:   filesystems: None
+[0m01:54:01.778940 [info ] [MainThread]:   remote: None
+[0m01:54:01.779772 [info ] [MainThread]:   plugins: None
+[0m01:54:01.780591 [info ] [MainThread]:   disable_transactions: False
+[0m01:54:01.781646 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m01:54:02.056718 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m01:54:03.176768 [debug] [MainThread]: Using duckdb connection "debug"
+[0m01:54:03.177267 [debug] [MainThread]: On debug: select 1 as id
+[0m01:54:03.177624 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m01:54:03.199314 [debug] [MainThread]: SQL status: OK in 0.022 seconds
+[0m01:54:03.200735 [debug] [MainThread]: On debug: Close
+[0m01:54:03.201547 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m01:54:03.202595 [info ] [MainThread]: [31m1 check failed:[0m
+[0m01:54:03.204323 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH and that the user has permissions to run it: "git"
+
+[0m01:54:03.207216 [debug] [MainThread]: Command `dbt debug` failed at 01:54:03.206979 after 2.09 seconds
+[0m01:54:03.207846 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m01:54:03.208256 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CE990B42B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CE98D6D370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CE97A2B350>]}
+[0m01:54:03.208867 [debug] [MainThread]: Flushing usage events
+[0m01:54:04.314116 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:54:17.086432 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAA31F8830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAA39E4A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAA4033ED0>]}
+
+
+============================== 01:54:17.092158 | e16600a8-f78f-49bf-ada0-80b3a7488af3 ==============================
+[0m01:54:17.092158 [info ] [MainThread]: Running with dbt=1.10.15
+[0m01:54:17.093091 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'target_path': 'None', 'profiles_dir': 'C:\\Users\\Chirag\\.dbt', 'printer_width': '80', 'invocation_command': 'dbt run', 'warn_error': 'None', 'log_path': 'D:\\Timepass Projects\\Ecommerce Realtime\\dbt\\logs', 'partial_parse': 'True', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'use_colors': 'True', 'cache_selected_only': 'False', 'write_json': 'True'}
+[0m01:54:17.559435 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e16600a8-f78f-49bf-ada0-80b3a7488af3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAA33AC8A0>]}
+[0m01:54:17.650271 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e16600a8-f78f-49bf-ada0-80b3a7488af3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAA53C8050>]}
+[0m01:54:17.653668 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m01:54:17.938391 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m01:54:17.939557 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m01:54:17.940273 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'e16600a8-f78f-49bf-ada0-80b3a7488af3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAA5199A50>]}
+[0m01:54:20.923799 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.dbt_ecommerce.marts
+- models.dbt_ecommerce.staging
+[0m01:54:20.933269 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e16600a8-f78f-49bf-ada0-80b3a7488af3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAA54F55E0>]}
+[0m01:54:21.010718 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Timepass Projects\Ecommerce Realtime\dbt\target\manifest.json
+[0m01:54:21.031619 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Timepass Projects\Ecommerce Realtime\dbt\target\semantic_manifest.json
+[0m01:54:21.105631 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e16600a8-f78f-49bf-ada0-80b3a7488af3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAA57E8910>]}
+[0m01:54:21.106291 [info ] [MainThread]: Found 2 models, 468 macros
+[0m01:54:21.107062 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e16600a8-f78f-49bf-ada0-80b3a7488af3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAA55B7C70>]}
+[0m01:54:21.109243 [info ] [MainThread]: 
+[0m01:54:21.109933 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m01:54:21.110473 [info ] [MainThread]: 
+[0m01:54:21.111201 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m01:54:21.112655 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_ecommerce'
+[0m01:54:21.192989 [debug] [ThreadPool]: Using duckdb connection "list_ecommerce"
+[0m01:54:21.193496 [debug] [ThreadPool]: On list_ecommerce: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "ecommerce", "target_name": "dev", "connection_name": "list_ecommerce"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"ecommerce"'
+    
+  
+  
+[0m01:54:21.193860 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:54:21.215802 [debug] [ThreadPool]: SQL status: OK in 0.022 seconds
+[0m01:54:21.217477 [debug] [ThreadPool]: On list_ecommerce: Close
+[0m01:54:21.218343 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ecommerce, now create_ecommerce_main)
+[0m01:54:21.218920 [debug] [ThreadPool]: Creating schema "database: "ecommerce"
+schema: "main"
+"
+[0m01:54:21.227126 [debug] [ThreadPool]: Using duckdb connection "create_ecommerce_main"
+[0m01:54:21.227582 [debug] [ThreadPool]: On create_ecommerce_main: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "ecommerce", "target_name": "dev", "connection_name": "create_ecommerce_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='ecommerce'
+        and type='sqlite'
+    
+  
+[0m01:54:21.227927 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m01:54:21.229461 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m01:54:21.231127 [debug] [ThreadPool]: Using duckdb connection "create_ecommerce_main"
+[0m01:54:21.231634 [debug] [ThreadPool]: On create_ecommerce_main: BEGIN
+[0m01:54:21.232430 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m01:54:21.232871 [debug] [ThreadPool]: Using duckdb connection "create_ecommerce_main"
+[0m01:54:21.233280 [debug] [ThreadPool]: On create_ecommerce_main: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "ecommerce", "target_name": "dev", "connection_name": "create_ecommerce_main"} */
+
+    
+    
+        create schema if not exists "ecommerce"."main"
+    
+[0m01:54:21.234121 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m01:54:21.235283 [debug] [ThreadPool]: On create_ecommerce_main: COMMIT
+[0m01:54:21.235731 [debug] [ThreadPool]: Using duckdb connection "create_ecommerce_main"
+[0m01:54:21.236098 [debug] [ThreadPool]: On create_ecommerce_main: COMMIT
+[0m01:54:21.236917 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m01:54:21.237345 [debug] [ThreadPool]: On create_ecommerce_main: Close
+[0m01:54:21.244391 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_ecommerce_main'
+[0m01:54:21.254020 [debug] [ThreadPool]: Using duckdb connection "list_ecommerce_main"
+[0m01:54:21.254482 [debug] [ThreadPool]: On list_ecommerce_main: BEGIN
+[0m01:54:21.254811 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:54:21.255690 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m01:54:21.256224 [debug] [ThreadPool]: Using duckdb connection "list_ecommerce_main"
+[0m01:54:21.256629 [debug] [ThreadPool]: On list_ecommerce_main: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "ecommerce", "target_name": "dev", "connection_name": "list_ecommerce_main"} */
+select
+      'ecommerce' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'ecommerce'
+  
+[0m01:54:21.277460 [debug] [ThreadPool]: SQL status: OK in 0.020 seconds
+[0m01:54:21.279604 [debug] [ThreadPool]: On list_ecommerce_main: ROLLBACK
+[0m01:54:21.283278 [debug] [ThreadPool]: Failed to rollback 'list_ecommerce_main'
+[0m01:54:21.283722 [debug] [ThreadPool]: On list_ecommerce_main: Close
+[0m01:54:21.284623 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e16600a8-f78f-49bf-ada0-80b3a7488af3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAA57674D0>]}
+[0m01:54:21.285230 [debug] [MainThread]: Using duckdb connection "master"
+[0m01:54:21.285643 [debug] [MainThread]: On master: BEGIN
+[0m01:54:21.285994 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m01:54:21.286922 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m01:54:21.287387 [debug] [MainThread]: On master: COMMIT
+[0m01:54:21.287743 [debug] [MainThread]: Using duckdb connection "master"
+[0m01:54:21.288117 [debug] [MainThread]: On master: COMMIT
+[0m01:54:21.288803 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m01:54:21.289228 [debug] [MainThread]: On master: Close
+[0m01:54:21.328228 [debug] [Thread-1 (]: Began running node model.dbt_ecommerce.mart_daily_sales
+[0m01:54:21.328980 [info ] [Thread-1 (]: 1 of 1 START sql table model main.mart_daily_sales ............................. [RUN]
+[0m01:54:21.330129 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.dbt_ecommerce.mart_daily_sales'
+[0m01:54:21.330701 [debug] [Thread-1 (]: Began compiling node model.dbt_ecommerce.mart_daily_sales
+[0m01:54:21.340885 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ecommerce.mart_daily_sales"
+[0m01:54:21.346890 [debug] [Thread-1 (]: Began executing node model.dbt_ecommerce.mart_daily_sales
+[0m01:54:21.389203 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ecommerce.mart_daily_sales"
+[0m01:54:21.390910 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_ecommerce.mart_daily_sales"
+[0m01:54:21.391702 [debug] [Thread-1 (]: On model.dbt_ecommerce.mart_daily_sales: BEGIN
+[0m01:54:21.392177 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m01:54:21.393233 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m01:54:21.393738 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_ecommerce.mart_daily_sales"
+[0m01:54:21.394169 [debug] [Thread-1 (]: On model.dbt_ecommerce.mart_daily_sales: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "ecommerce", "target_name": "dev", "node_id": "model.dbt_ecommerce.mart_daily_sales"} */
+
+  
+    
+    
+
+    create  table
+      "ecommerce"."main"."mart_daily_sales__dbt_tmp"
+  
+    as (
+      
+
+with o as (
+  select
+    date_trunc('day', invoicedate) as day,
+    coalesce(total_amount, quantity * unitprice, 0)::double as total_amount,
+    customerid
+  from "ecommerce"."main"."stg_orders"
+)
+
+select
+  day::date as day,
+  sum(total_amount) as revenue,
+  count(distinct customerid) as unique_customers,
+  count(*) as orders
+from o
+group by 1
+order by 1
+    );
+  
+  
+[0m01:54:21.395796 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "ecommerce", "target_name": "dev", "node_id": "model.dbt_ecommerce.mart_daily_sales"} */
+
+  
+    
+    
+
+    create  table
+      "ecommerce"."main"."mart_daily_sales__dbt_tmp"
+  
+    as (
+      
+
+with o as (
+  select
+    date_trunc('day', invoicedate) as day,
+    coalesce(total_amount, quantity * unitprice, 0)::double as total_amount,
+    customerid
+  from "ecommerce"."main"."stg_orders"
+)
+
+select
+  day::date as day,
+  sum(total_amount) as revenue,
+  count(distinct customerid) as unique_customers,
+  count(*) as orders
+from o
+group by 1
+order by 1
+    );
+  
+  
+[0m01:54:21.396379 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m01:54:21.397160 [debug] [Thread-1 (]: On model.dbt_ecommerce.mart_daily_sales: ROLLBACK
+[0m01:54:21.426224 [debug] [Thread-1 (]: Failed to rollback 'model.dbt_ecommerce.mart_daily_sales'
+[0m01:54:21.426777 [debug] [Thread-1 (]: On model.dbt_ecommerce.mart_daily_sales: Close
+[0m01:54:21.433310 [debug] [Thread-1 (]: Runtime Error in model mart_daily_sales (models\mart_daily_sales.sql)
+  Catalog Error: Table with name stg_orders does not exist!
+  Did you mean "pg_catalog.pg_attrdef"?
+  
+  LINE 18:   from "ecommerce"."main"."stg_orders"
+                  ^
+[0m01:54:21.436286 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e16600a8-f78f-49bf-ada0-80b3a7488af3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAA56E3B70>]}
+[0m01:54:21.437148 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model main.mart_daily_sales .................... [[31mERROR[0m in 0.10s]
+[0m01:54:21.438180 [debug] [Thread-1 (]: Finished running node model.dbt_ecommerce.mart_daily_sales
+[0m01:54:21.438945 [debug] [Thread-4 (]: Marking all children of 'model.dbt_ecommerce.mart_daily_sales' to be skipped because of status 'error'.  Reason: Runtime Error in model mart_daily_sales (models\mart_daily_sales.sql)
+  Catalog Error: Table with name stg_orders does not exist!
+  Did you mean "pg_catalog.pg_attrdef"?
+  
+  LINE 18:   from "ecommerce"."main"."stg_orders"
+                  ^.
+[0m01:54:21.441256 [debug] [MainThread]: Using duckdb connection "master"
+[0m01:54:21.441688 [debug] [MainThread]: On master: BEGIN
+[0m01:54:21.442019 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m01:54:21.442741 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m01:54:21.443116 [debug] [MainThread]: On master: COMMIT
+[0m01:54:21.443508 [debug] [MainThread]: Using duckdb connection "master"
+[0m01:54:21.443842 [debug] [MainThread]: On master: COMMIT
+[0m01:54:21.444469 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m01:54:21.444848 [debug] [MainThread]: On master: Close
+[0m01:54:21.445297 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m01:54:21.445663 [debug] [MainThread]: Connection 'create_ecommerce_main' was properly closed.
+[0m01:54:21.446187 [debug] [MainThread]: Connection 'list_ecommerce_main' was properly closed.
+[0m01:54:21.446691 [debug] [MainThread]: Connection 'model.dbt_ecommerce.mart_daily_sales' was properly closed.
+[0m01:54:21.447137 [info ] [MainThread]: 
+[0m01:54:21.447856 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.34 seconds (0.34s).
+[0m01:54:21.449307 [debug] [MainThread]: Command end result
+[0m01:54:21.473375 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Timepass Projects\Ecommerce Realtime\dbt\target\manifest.json
+[0m01:54:21.476314 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Timepass Projects\Ecommerce Realtime\dbt\target\semantic_manifest.json
+[0m01:54:21.484884 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\Timepass Projects\Ecommerce Realtime\dbt\target\run_results.json
+[0m01:54:21.485356 [info ] [MainThread]: 
+[0m01:54:21.486048 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m01:54:21.486729 [info ] [MainThread]: 
+[0m01:54:21.487698 [error] [MainThread]: [31mFailure in model mart_daily_sales (models\mart_daily_sales.sql)[0m
+[0m01:54:21.488633 [error] [MainThread]:   Runtime Error in model mart_daily_sales (models\mart_daily_sales.sql)
+  Catalog Error: Table with name stg_orders does not exist!
+  Did you mean "pg_catalog.pg_attrdef"?
+  
+  LINE 18:   from "ecommerce"."main"."stg_orders"
+                  ^
+[0m01:54:21.489431 [info ] [MainThread]: 
+[0m01:54:21.490240 [info ] [MainThread]:   compiled code at target\compiled\dbt_ecommerce\models\mart_daily_sales.sql
+[0m01:54:21.491037 [info ] [MainThread]: 
+[0m01:54:21.491793 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m01:54:21.493497 [debug] [MainThread]: Command `dbt run` failed at 01:54:21.493272 after 4.56 seconds
+[0m01:54:21.494000 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAA5A784B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAA5B2E450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAA5203B50>]}
+[0m01:54:21.494424 [debug] [MainThread]: Flushing usage events
+[0m01:54:22.581054 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:55:46.360273 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7ACEDC830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7AD6C4A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7ADD13ED0>]}
+
+
+============================== 01:55:46.366558 | 48120190-0112-4962-8c37-ff257da1bc91 ==============================
+[0m01:55:46.366558 [info ] [MainThread]: Running with dbt=1.10.15
+[0m01:55:46.367401 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'log_format': 'default', 'invocation_command': 'dbt debug', 'write_json': 'True', 'no_print': 'None', 'warn_error': 'None', 'static_parser': 'True', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'log_path': 'D:\\Timepass Projects\\Ecommerce Realtime\\dbt\\logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'version_check': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'profiles_dir': 'C:\\Users\\Chirag\\.dbt', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None'}
+[0m01:55:46.400301 [info ] [MainThread]: dbt version: 1.10.15
+[0m01:55:46.401009 [info ] [MainThread]: python version: 3.13.3
+[0m01:55:46.401951 [info ] [MainThread]: python path: D:\Timepass Projects\Ecommerce Realtime\.venv\Scripts\python.exe
+[0m01:55:46.402694 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m01:55:46.550100 [info ] [MainThread]: Using profiles dir at C:\Users\Chirag\.dbt
+[0m01:55:46.550898 [info ] [MainThread]: Using profiles.yml file at C:\Users\Chirag\.dbt\profiles.yml
+[0m01:55:46.552081 [info ] [MainThread]: Using dbt_project.yml file at D:\Timepass Projects\Ecommerce Realtime\dbt\dbt_project.yml
+[0m01:55:46.556337 [info ] [MainThread]: adapter type: duckdb
+[0m01:55:46.557402 [info ] [MainThread]: adapter version: 1.10.0
+[0m01:55:46.698134 [info ] [MainThread]: Configuration:
+[0m01:55:46.698855 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m01:55:46.699520 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m01:55:46.700116 [info ] [MainThread]: Required dependencies:
+[0m01:55:46.700696 [debug] [MainThread]: Executing "git --help"
+[0m01:55:46.708724 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m01:55:46.709374 [info ] [MainThread]: Connection:
+[0m01:55:46.709974 [info ] [MainThread]:   database: ecommerce
+[0m01:55:46.710535 [info ] [MainThread]:   schema: main
+[0m01:55:46.711092 [info ] [MainThread]:   path: D:/Timepass Projects/Ecommerce Realtime/duckdb/ecommerce.duckdb
+[0m01:55:46.711633 [info ] [MainThread]:   config_options: None
+[0m01:55:46.712240 [info ] [MainThread]:   extensions: None
+[0m01:55:46.712808 [info ] [MainThread]:   settings: {}
+[0m01:55:46.713328 [info ] [MainThread]:   external_root: .
+[0m01:55:46.713873 [info ] [MainThread]:   use_credential_provider: None
+[0m01:55:46.714511 [info ] [MainThread]:   attach: None
+[0m01:55:46.715110 [info ] [MainThread]:   filesystems: None
+[0m01:55:46.715771 [info ] [MainThread]:   remote: None
+[0m01:55:46.716553 [info ] [MainThread]:   plugins: None
+[0m01:55:46.717531 [info ] [MainThread]:   disable_transactions: False
+[0m01:55:46.718672 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m01:55:46.982720 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m01:55:47.046135 [debug] [MainThread]: Using duckdb connection "debug"
+[0m01:55:47.046715 [debug] [MainThread]: On debug: select 1 as id
+[0m01:55:47.047444 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m01:55:47.068563 [debug] [MainThread]: SQL status: OK in 0.021 seconds
+[0m01:55:47.069994 [debug] [MainThread]: On debug: Close
+[0m01:55:47.070448 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m01:55:47.071180 [info ] [MainThread]: [31m1 check failed:[0m
+[0m01:55:47.072036 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH and that the user has permissions to run it: "git"
+
+[0m01:55:47.073597 [debug] [MainThread]: Command `dbt debug` failed at 01:55:47.073331 after 0.88 seconds
+[0m01:55:47.074085 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m01:55:47.074614 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7AF3F42B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7AF0AD370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7ADDCB350>]}
+[0m01:55:47.075168 [debug] [MainThread]: Flushing usage events
+[0m01:55:48.149623 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:55:54.387440 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000137F0548830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000137F0D34A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000137F1383ED0>]}
+
+
+============================== 01:55:54.393165 | 7b79f0b9-7b72-44f8-a2d3-f53468acf7e3 ==============================
+[0m01:55:54.393165 [info ] [MainThread]: Running with dbt=1.10.15
+[0m01:55:54.394090 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'profiles_dir': 'C:\\Users\\Chirag\\.dbt', 'write_json': 'True', 'cache_selected_only': 'False', 'invocation_command': 'dbt run', 'warn_error': 'None', 'indirect_selection': 'eager', 'fail_fast': 'False', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'D:\\Timepass Projects\\Ecommerce Realtime\\dbt\\logs', 'use_experimental_parser': 'False', 'version_check': 'True', 'introspect': 'True', 'quiet': 'False', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'use_colors': 'True', 'printer_width': '80', 'target_path': 'None'}
+[0m01:55:54.711990 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7b79f0b9-7b72-44f8-a2d3-f53468acf7e3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000137F06FC8A0>]}
+[0m01:55:54.797140 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7b79f0b9-7b72-44f8-a2d3-f53468acf7e3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000137F26C8050>]}
+[0m01:55:54.800473 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m01:55:55.071336 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m01:55:55.212421 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 2 files changed.
+[0m01:55:55.213056 [debug] [MainThread]: Partial parsing: updated file: dbt_ecommerce://models\mart_daily_sales.sql
+[0m01:55:55.213524 [debug] [MainThread]: Partial parsing: updated file: dbt_ecommerce://models\stg_orders.sql
+[0m01:55:55.554208 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.dbt_ecommerce.staging
+- models.dbt_ecommerce.marts
+[0m01:55:55.565548 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7b79f0b9-7b72-44f8-a2d3-f53468acf7e3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000137F2808350>]}
+[0m01:55:55.643533 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Timepass Projects\Ecommerce Realtime\dbt\target\manifest.json
+[0m01:55:55.646262 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Timepass Projects\Ecommerce Realtime\dbt\target\semantic_manifest.json
+[0m01:55:55.685596 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7b79f0b9-7b72-44f8-a2d3-f53468acf7e3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000137F13DFA70>]}
+[0m01:55:55.686239 [info ] [MainThread]: Found 2 models, 468 macros
+[0m01:55:55.686940 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7b79f0b9-7b72-44f8-a2d3-f53468acf7e3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000137F13865F0>]}
+[0m01:55:55.690359 [info ] [MainThread]: 
+[0m01:55:55.691183 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m01:55:55.691673 [info ] [MainThread]: 
+[0m01:55:55.692326 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m01:55:55.699755 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_ecommerce'
+[0m01:55:55.836760 [debug] [ThreadPool]: Using duckdb connection "list_ecommerce"
+[0m01:55:55.837211 [debug] [ThreadPool]: On list_ecommerce: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "ecommerce", "target_name": "dev", "connection_name": "list_ecommerce"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"ecommerce"'
+    
+  
+  
+[0m01:55:55.837627 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:55:55.858583 [debug] [ThreadPool]: SQL status: OK in 0.021 seconds
+[0m01:55:55.860200 [debug] [ThreadPool]: On list_ecommerce: Close
+[0m01:55:55.861069 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ecommerce, now create_ecommerce_main)
+[0m01:55:55.861625 [debug] [ThreadPool]: Creating schema "database: "ecommerce"
+schema: "main"
+"
+[0m01:55:55.868798 [debug] [ThreadPool]: Using duckdb connection "create_ecommerce_main"
+[0m01:55:55.869231 [debug] [ThreadPool]: On create_ecommerce_main: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "ecommerce", "target_name": "dev", "connection_name": "create_ecommerce_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='ecommerce'
+        and type='sqlite'
+    
+  
+[0m01:55:55.869576 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m01:55:55.870991 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m01:55:55.872605 [debug] [ThreadPool]: Using duckdb connection "create_ecommerce_main"
+[0m01:55:55.873021 [debug] [ThreadPool]: On create_ecommerce_main: BEGIN
+[0m01:55:55.873687 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m01:55:55.874053 [debug] [ThreadPool]: Using duckdb connection "create_ecommerce_main"
+[0m01:55:55.874378 [debug] [ThreadPool]: On create_ecommerce_main: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "ecommerce", "target_name": "dev", "connection_name": "create_ecommerce_main"} */
+
+    
+    
+        create schema if not exists "ecommerce"."main"
+    
+[0m01:55:55.875072 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m01:55:55.876192 [debug] [ThreadPool]: On create_ecommerce_main: COMMIT
+[0m01:55:55.876656 [debug] [ThreadPool]: Using duckdb connection "create_ecommerce_main"
+[0m01:55:55.877025 [debug] [ThreadPool]: On create_ecommerce_main: COMMIT
+[0m01:55:55.877741 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m01:55:55.878211 [debug] [ThreadPool]: On create_ecommerce_main: Close
+[0m01:55:55.879854 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_ecommerce_main'
+[0m01:55:55.886551 [debug] [ThreadPool]: Using duckdb connection "list_ecommerce_main"
+[0m01:55:55.887215 [debug] [ThreadPool]: On list_ecommerce_main: BEGIN
+[0m01:55:55.887677 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:55:55.888549 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m01:55:55.888961 [debug] [ThreadPool]: Using duckdb connection "list_ecommerce_main"
+[0m01:55:55.889333 [debug] [ThreadPool]: On list_ecommerce_main: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "ecommerce", "target_name": "dev", "connection_name": "list_ecommerce_main"} */
+select
+      'ecommerce' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'ecommerce'
+  
+[0m01:55:55.909925 [debug] [ThreadPool]: SQL status: OK in 0.020 seconds
+[0m01:55:55.911459 [debug] [ThreadPool]: On list_ecommerce_main: ROLLBACK
+[0m01:55:55.912713 [debug] [ThreadPool]: Failed to rollback 'list_ecommerce_main'
+[0m01:55:55.913117 [debug] [ThreadPool]: On list_ecommerce_main: Close
+[0m01:55:55.913987 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7b79f0b9-7b72-44f8-a2d3-f53468acf7e3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000137F2A52750>]}
+[0m01:55:55.914555 [debug] [MainThread]: Using duckdb connection "master"
+[0m01:55:55.914974 [debug] [MainThread]: On master: BEGIN
+[0m01:55:55.915354 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m01:55:55.916120 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m01:55:55.916700 [debug] [MainThread]: On master: COMMIT
+[0m01:55:55.917250 [debug] [MainThread]: Using duckdb connection "master"
+[0m01:55:55.918213 [debug] [MainThread]: On master: COMMIT
+[0m01:55:55.919138 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m01:55:55.919575 [debug] [MainThread]: On master: Close
+[0m01:55:55.924406 [debug] [Thread-1 (]: Began running node model.dbt_ecommerce.mart_daily_sales
+[0m01:55:55.925074 [info ] [Thread-1 (]: 1 of 2 START sql table model main.mart_daily_sales ............................. [RUN]
+[0m01:55:55.925858 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.dbt_ecommerce.mart_daily_sales'
+[0m01:55:55.926367 [debug] [Thread-1 (]: Began compiling node model.dbt_ecommerce.mart_daily_sales
+[0m01:55:55.934796 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ecommerce.mart_daily_sales"
+[0m01:55:55.935756 [debug] [Thread-1 (]: Began executing node model.dbt_ecommerce.mart_daily_sales
+[0m01:55:55.980341 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ecommerce.mart_daily_sales"
+[0m01:55:55.981475 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_ecommerce.mart_daily_sales"
+[0m01:55:55.982005 [debug] [Thread-1 (]: On model.dbt_ecommerce.mart_daily_sales: BEGIN
+[0m01:55:55.982562 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m01:55:55.983695 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m01:55:55.984174 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_ecommerce.mart_daily_sales"
+[0m01:55:55.984604 [debug] [Thread-1 (]: On model.dbt_ecommerce.mart_daily_sales: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "ecommerce", "target_name": "dev", "node_id": "model.dbt_ecommerce.mart_daily_sales"} */
+
+  
+    
+    
+
+    create  table
+      "ecommerce"."main"."mart_daily_sales__dbt_tmp"
+  
+    as (
+      
+
+with raw as (
+  -- read the parquet file produced by your ETL
+  select *
+  from read_parquet('../parquet/orders.parquet')
+),
+
+clean as (
+  select
+    try_cast(invoicedate as timestamp) as invoicedate,
+    coalesce(try_cast(quantity as double), 0) as quantity,
+    coalesce(try_cast(unitprice as double), 0) as unitprice,
+    coalesce(try_cast(quantity as double) * try_cast(unitprice as double), 0) as total_amount,
+    try_cast(customerid as integer) as customerid
+  from raw
+)
+
+select
+  date_trunc('day', invoicedate)::date as day,
+  sum(total_amount) as revenue,
+  count(distinct customerid) as unique_customers,
+  count(*) as orders
+from clean
+group by 1
+order by 1
+    );
+  
+  
+[0m01:55:55.986577 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "ecommerce", "target_name": "dev", "node_id": "model.dbt_ecommerce.mart_daily_sales"} */
+
+  
+    
+    
+
+    create  table
+      "ecommerce"."main"."mart_daily_sales__dbt_tmp"
+  
+    as (
+      
+
+with raw as (
+  -- read the parquet file produced by your ETL
+  select *
+  from read_parquet('../parquet/orders.parquet')
+),
+
+clean as (
+  select
+    try_cast(invoicedate as timestamp) as invoicedate,
+    coalesce(try_cast(quantity as double), 0) as quantity,
+    coalesce(try_cast(unitprice as double), 0) as unitprice,
+    coalesce(try_cast(quantity as double) * try_cast(unitprice as double), 0) as total_amount,
+    try_cast(customerid as integer) as customerid
+  from raw
+)
+
+select
+  date_trunc('day', invoicedate)::date as day,
+  sum(total_amount) as revenue,
+  count(distinct customerid) as unique_customers,
+  count(*) as orders
+from clean
+group by 1
+order by 1
+    );
+  
+  
+[0m01:55:55.987200 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m01:55:55.987914 [debug] [Thread-1 (]: On model.dbt_ecommerce.mart_daily_sales: ROLLBACK
+[0m01:55:55.996461 [debug] [Thread-1 (]: Failed to rollback 'model.dbt_ecommerce.mart_daily_sales'
+[0m01:55:55.997004 [debug] [Thread-1 (]: On model.dbt_ecommerce.mart_daily_sales: Close
+[0m01:55:56.002417 [debug] [Thread-1 (]: Runtime Error in model mart_daily_sales (models\mart_daily_sales.sql)
+  IO Error: No files found that match the pattern "../parquet/orders.parquet"
+  
+  LINE 16:   from read_parquet('../parquet/orders.parquet')
+                  ^
+[0m01:55:56.005166 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7b79f0b9-7b72-44f8-a2d3-f53468acf7e3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000137F2CE1550>]}
+[0m01:55:56.006118 [error] [Thread-1 (]: 1 of 2 ERROR creating sql table model main.mart_daily_sales .................... [[31mERROR[0m in 0.08s]
+[0m01:55:56.007589 [debug] [Thread-1 (]: Finished running node model.dbt_ecommerce.mart_daily_sales
+[0m01:55:56.008492 [debug] [Thread-1 (]: Began running node model.dbt_ecommerce.stg_orders
+[0m01:55:56.009266 [debug] [Thread-4 (]: Marking all children of 'model.dbt_ecommerce.mart_daily_sales' to be skipped because of status 'error'.  Reason: Runtime Error in model mart_daily_sales (models\mart_daily_sales.sql)
+  IO Error: No files found that match the pattern "../parquet/orders.parquet"
+  
+  LINE 16:   from read_parquet('../parquet/orders.parquet')
+                  ^.
+[0m01:55:56.009874 [info ] [Thread-1 (]: 2 of 2 START sql view model main.stg_orders .................................... [RUN]
+[0m01:55:56.011442 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_ecommerce.mart_daily_sales, now model.dbt_ecommerce.stg_orders)
+[0m01:55:56.011983 [debug] [Thread-1 (]: Began compiling node model.dbt_ecommerce.stg_orders
+[0m01:55:56.014847 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ecommerce.stg_orders"
+[0m01:55:56.015857 [debug] [Thread-1 (]: Began executing node model.dbt_ecommerce.stg_orders
+[0m01:55:56.037558 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ecommerce.stg_orders"
+[0m01:55:56.038739 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_ecommerce.stg_orders"
+[0m01:55:56.039615 [debug] [Thread-1 (]: On model.dbt_ecommerce.stg_orders: BEGIN
+[0m01:55:56.040499 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m01:55:56.041524 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m01:55:56.042185 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_ecommerce.stg_orders"
+[0m01:55:56.042747 [debug] [Thread-1 (]: On model.dbt_ecommerce.stg_orders: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "ecommerce", "target_name": "dev", "node_id": "model.dbt_ecommerce.stg_orders"} */
+
+  
+  create view "ecommerce"."main"."stg_orders__dbt_tmp" as (
+    
+
+-- staging model reading the parquet created by ETL
+with raw as (
+  select *
+  from read_parquet('../parquet/orders.parquet')
+)
+
+select
+  invoiceno,
+  stockcode,
+  description,
+  try_cast(quantity AS integer) as quantity,
+  -- Parse/normalize invoice date; adjust dayfirst if needed:
+  try_cast(invoicedate AS timestamp) as invoicedate,
+  unitprice,
+  try_cast(customerid AS integer) as customerid,
+  country
+from raw
+  );
+
+[0m01:55:56.044329 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "ecommerce", "target_name": "dev", "node_id": "model.dbt_ecommerce.stg_orders"} */
+
+  
+  create view "ecommerce"."main"."stg_orders__dbt_tmp" as (
+    
+
+-- staging model reading the parquet created by ETL
+with raw as (
+  select *
+  from read_parquet('../parquet/orders.parquet')
+)
+
+select
+  invoiceno,
+  stockcode,
+  description,
+  try_cast(quantity AS integer) as quantity,
+  -- Parse/normalize invoice date; adjust dayfirst if needed:
+  try_cast(invoicedate AS timestamp) as invoicedate,
+  unitprice,
+  try_cast(customerid AS integer) as customerid,
+  country
+from raw
+  );
+
+[0m01:55:56.045042 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m01:55:56.045640 [debug] [Thread-1 (]: On model.dbt_ecommerce.stg_orders: ROLLBACK
+[0m01:55:56.051547 [debug] [Thread-1 (]: Failed to rollback 'model.dbt_ecommerce.stg_orders'
+[0m01:55:56.052216 [debug] [Thread-1 (]: On model.dbt_ecommerce.stg_orders: Close
+[0m01:55:56.058026 [debug] [Thread-1 (]: Runtime Error in model stg_orders (models\stg_orders.sql)
+  IO Error: No files found that match the pattern "../parquet/orders.parquet"
+  
+  LINE 10:   from read_parquet('../parquet/orders.parquet')
+                  ^
+[0m01:55:56.058677 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7b79f0b9-7b72-44f8-a2d3-f53468acf7e3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000137F2AA1C80>]}
+[0m01:55:56.059499 [error] [Thread-1 (]: 2 of 2 ERROR creating sql view model main.stg_orders ........................... [[31mERROR[0m in 0.05s]
+[0m01:55:56.060677 [debug] [Thread-1 (]: Finished running node model.dbt_ecommerce.stg_orders
+[0m01:55:56.061546 [debug] [Thread-4 (]: Marking all children of 'model.dbt_ecommerce.stg_orders' to be skipped because of status 'error'.  Reason: Runtime Error in model stg_orders (models\stg_orders.sql)
+  IO Error: No files found that match the pattern "../parquet/orders.parquet"
+  
+  LINE 10:   from read_parquet('../parquet/orders.parquet')
+                  ^.
+[0m01:55:56.063115 [debug] [MainThread]: Using duckdb connection "master"
+[0m01:55:56.063554 [debug] [MainThread]: On master: BEGIN
+[0m01:55:56.063901 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m01:55:56.064716 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m01:55:56.065138 [debug] [MainThread]: On master: COMMIT
+[0m01:55:56.065481 [debug] [MainThread]: Using duckdb connection "master"
+[0m01:55:56.065805 [debug] [MainThread]: On master: COMMIT
+[0m01:55:56.066482 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m01:55:56.066932 [debug] [MainThread]: On master: Close
+[0m01:55:56.067485 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m01:55:56.067830 [debug] [MainThread]: Connection 'create_ecommerce_main' was properly closed.
+[0m01:55:56.068232 [debug] [MainThread]: Connection 'list_ecommerce_main' was properly closed.
+[0m01:55:56.068723 [debug] [MainThread]: Connection 'model.dbt_ecommerce.stg_orders' was properly closed.
+[0m01:55:56.069221 [info ] [MainThread]: 
+[0m01:55:56.069880 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 0.38 seconds (0.38s).
+[0m01:55:56.071226 [debug] [MainThread]: Command end result
+[0m01:55:56.098623 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Timepass Projects\Ecommerce Realtime\dbt\target\manifest.json
+[0m01:55:56.101513 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Timepass Projects\Ecommerce Realtime\dbt\target\semantic_manifest.json
+[0m01:55:56.110519 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\Timepass Projects\Ecommerce Realtime\dbt\target\run_results.json
+[0m01:55:56.111208 [info ] [MainThread]: 
+[0m01:55:56.112119 [info ] [MainThread]: [31mCompleted with 2 errors, 0 partial successes, and 0 warnings:[0m
+[0m01:55:56.112983 [info ] [MainThread]: 
+[0m01:55:56.113988 [error] [MainThread]: [31mFailure in model mart_daily_sales (models\mart_daily_sales.sql)[0m
+[0m01:55:56.115007 [error] [MainThread]:   Runtime Error in model mart_daily_sales (models\mart_daily_sales.sql)
+  IO Error: No files found that match the pattern "../parquet/orders.parquet"
+  
+  LINE 16:   from read_parquet('../parquet/orders.parquet')
+                  ^
+[0m01:55:56.115727 [info ] [MainThread]: 
+[0m01:55:56.116666 [info ] [MainThread]:   compiled code at target\compiled\dbt_ecommerce\models\mart_daily_sales.sql
+[0m01:55:56.117303 [info ] [MainThread]: 
+[0m01:55:56.118178 [error] [MainThread]: [31mFailure in model stg_orders (models\stg_orders.sql)[0m
+[0m01:55:56.118953 [error] [MainThread]:   Runtime Error in model stg_orders (models\stg_orders.sql)
+  IO Error: No files found that match the pattern "../parquet/orders.parquet"
+  
+  LINE 10:   from read_parquet('../parquet/orders.parquet')
+                  ^
+[0m01:55:56.119706 [info ] [MainThread]: 
+[0m01:55:56.121142 [info ] [MainThread]:   compiled code at target\compiled\dbt_ecommerce\models\stg_orders.sql
+[0m01:55:56.123620 [info ] [MainThread]: 
+[0m01:55:56.126218 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=2 SKIP=0 NO-OP=0 TOTAL=2
+[0m01:55:56.127947 [debug] [MainThread]: Command `dbt run` failed at 01:55:56.127730 after 1.94 seconds
+[0m01:55:56.128422 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000137F267DDB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000137F2D6A060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000137F264DC50>]}
+[0m01:55:56.128865 [debug] [MainThread]: Flushing usage events
+[0m01:55:57.188165 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:00:12.151275 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001573FC98830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015740484A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015740AD3ED0>]}
+
+
+============================== 02:00:12.157105 | 3ba6047e-c142-4f78-b3e4-22e459554a2d ==============================
+[0m02:00:12.157105 [info ] [MainThread]: Running with dbt=1.10.15
+[0m02:00:12.157972 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt run', 'target_path': 'None', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Chirag\\.dbt', 'log_format': 'default', 'warn_error': 'None', 'indirect_selection': 'eager', 'partial_parse': 'True', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'D:\\Timepass Projects\\Ecommerce Realtime\\dbt\\logs', 'version_check': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'introspect': 'True', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'use_colors': 'True', 'printer_width': '80', 'write_json': 'True'}
+[0m02:00:12.501114 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3ba6047e-c142-4f78-b3e4-22e459554a2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001573FE4C8A0>]}
+[0m02:00:12.597304 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3ba6047e-c142-4f78-b3e4-22e459554a2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015741EF4050>]}
+[0m02:00:12.600966 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m02:00:12.859432 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m02:00:13.016382 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 2 files changed.
+[0m02:00:13.017000 [debug] [MainThread]: Partial parsing: updated file: dbt_ecommerce://models\stg_orders.sql
+[0m02:00:13.017463 [debug] [MainThread]: Partial parsing: updated file: dbt_ecommerce://models\mart_daily_sales.sql
+[0m02:00:13.348836 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.dbt_ecommerce.marts
+- models.dbt_ecommerce.staging
+[0m02:00:13.355516 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3ba6047e-c142-4f78-b3e4-22e459554a2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015742038450>]}
+[0m02:00:13.429097 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Timepass Projects\Ecommerce Realtime\dbt\target\manifest.json
+[0m02:00:13.432496 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Timepass Projects\Ecommerce Realtime\dbt\target\semantic_manifest.json
+[0m02:00:13.473191 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3ba6047e-c142-4f78-b3e4-22e459554a2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001573F764050>]}
+[0m02:00:13.473814 [info ] [MainThread]: Found 2 models, 468 macros
+[0m02:00:13.475129 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3ba6047e-c142-4f78-b3e4-22e459554a2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015740AD5550>]}
+[0m02:00:13.477843 [info ] [MainThread]: 
+[0m02:00:13.478590 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m02:00:13.479492 [info ] [MainThread]: 
+[0m02:00:13.482252 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m02:00:13.488668 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_ecommerce'
+[0m02:00:13.635387 [debug] [ThreadPool]: Using duckdb connection "list_ecommerce"
+[0m02:00:13.635916 [debug] [ThreadPool]: On list_ecommerce: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "ecommerce", "target_name": "dev", "connection_name": "list_ecommerce"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"ecommerce"'
+    
+  
+  
+[0m02:00:13.636414 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m02:00:13.660829 [debug] [ThreadPool]: SQL status: OK in 0.024 seconds
+[0m02:00:13.662600 [debug] [ThreadPool]: On list_ecommerce: Close
+[0m02:00:13.663635 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ecommerce, now create_ecommerce_main)
+[0m02:00:13.664318 [debug] [ThreadPool]: Creating schema "database: "ecommerce"
+schema: "main"
+"
+[0m02:00:13.675145 [debug] [ThreadPool]: Using duckdb connection "create_ecommerce_main"
+[0m02:00:13.675592 [debug] [ThreadPool]: On create_ecommerce_main: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "ecommerce", "target_name": "dev", "connection_name": "create_ecommerce_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='ecommerce'
+        and type='sqlite'
+    
+  
+[0m02:00:13.675947 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m02:00:13.677589 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m02:00:13.679494 [debug] [ThreadPool]: Using duckdb connection "create_ecommerce_main"
+[0m02:00:13.679900 [debug] [ThreadPool]: On create_ecommerce_main: BEGIN
+[0m02:00:13.680750 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m02:00:13.681156 [debug] [ThreadPool]: Using duckdb connection "create_ecommerce_main"
+[0m02:00:13.681487 [debug] [ThreadPool]: On create_ecommerce_main: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "ecommerce", "target_name": "dev", "connection_name": "create_ecommerce_main"} */
+
+    
+    
+        create schema if not exists "ecommerce"."main"
+    
+[0m02:00:13.682200 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m02:00:13.683948 [debug] [ThreadPool]: On create_ecommerce_main: COMMIT
+[0m02:00:13.684433 [debug] [ThreadPool]: Using duckdb connection "create_ecommerce_main"
+[0m02:00:13.684776 [debug] [ThreadPool]: On create_ecommerce_main: COMMIT
+[0m02:00:13.685477 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m02:00:13.685886 [debug] [ThreadPool]: On create_ecommerce_main: Close
+[0m02:00:13.687824 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_ecommerce_main'
+[0m02:00:13.695912 [debug] [ThreadPool]: Using duckdb connection "list_ecommerce_main"
+[0m02:00:13.696339 [debug] [ThreadPool]: On list_ecommerce_main: BEGIN
+[0m02:00:13.696657 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m02:00:13.697582 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m02:00:13.698289 [debug] [ThreadPool]: Using duckdb connection "list_ecommerce_main"
+[0m02:00:13.698673 [debug] [ThreadPool]: On list_ecommerce_main: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "ecommerce", "target_name": "dev", "connection_name": "list_ecommerce_main"} */
+select
+      'ecommerce' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'ecommerce'
+  
+[0m02:00:13.719506 [debug] [ThreadPool]: SQL status: OK in 0.020 seconds
+[0m02:00:13.721189 [debug] [ThreadPool]: On list_ecommerce_main: ROLLBACK
+[0m02:00:13.722607 [debug] [ThreadPool]: Failed to rollback 'list_ecommerce_main'
+[0m02:00:13.723020 [debug] [ThreadPool]: On list_ecommerce_main: Close
+[0m02:00:13.723931 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3ba6047e-c142-4f78-b3e4-22e459554a2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000157422DCFC0>]}
+[0m02:00:13.724830 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:00:13.725351 [debug] [MainThread]: On master: BEGIN
+[0m02:00:13.725798 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m02:00:13.726722 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m02:00:13.727404 [debug] [MainThread]: On master: COMMIT
+[0m02:00:13.727764 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:00:13.728103 [debug] [MainThread]: On master: COMMIT
+[0m02:00:13.728825 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m02:00:13.729259 [debug] [MainThread]: On master: Close
+[0m02:00:13.733842 [debug] [Thread-1 (]: Began running node model.dbt_ecommerce.mart_daily_sales
+[0m02:00:13.734518 [info ] [Thread-1 (]: 1 of 2 START sql table model main.mart_daily_sales ............................. [RUN]
+[0m02:00:13.735513 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.dbt_ecommerce.mart_daily_sales'
+[0m02:00:13.736142 [debug] [Thread-1 (]: Began compiling node model.dbt_ecommerce.mart_daily_sales
+[0m02:00:13.746855 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ecommerce.mart_daily_sales"
+[0m02:00:13.747953 [debug] [Thread-1 (]: Began executing node model.dbt_ecommerce.mart_daily_sales
+[0m02:00:13.790178 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ecommerce.mart_daily_sales"
+[0m02:00:13.791332 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_ecommerce.mart_daily_sales"
+[0m02:00:13.791859 [debug] [Thread-1 (]: On model.dbt_ecommerce.mart_daily_sales: BEGIN
+[0m02:00:13.792255 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m02:00:13.793336 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m02:00:13.793901 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_ecommerce.mart_daily_sales"
+[0m02:00:13.794369 [debug] [Thread-1 (]: On model.dbt_ecommerce.mart_daily_sales: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "ecommerce", "target_name": "dev", "node_id": "model.dbt_ecommerce.mart_daily_sales"} */
+
+  
+    
+    
+
+    create  table
+      "ecommerce"."main"."mart_daily_sales__dbt_tmp"
+  
+    as (
+      
+
+with raw as (
+  select *
+  from read_parquet('D:/Timepass Projects/Ecommerce Realtime/parquet/parquet/orders.parquet')
+),
+
+clean as (
+  select
+    try_cast(invoicedate as timestamp) as invoicedate,
+    coalesce(try_cast(quantity as double), 0) as quantity,
+    coalesce(try_cast(unitprice as double), 0) as unitprice,
+    coalesce(try_cast(quantity as double) * try_cast(unitprice as double), 0) as total_amount,
+    try_cast(customerid as integer) as customerid
+  from raw
+)
+
+select
+  date_trunc('day', invoicedate)::date as day,
+  sum(total_amount) as revenue,
+  count(distinct customerid) as unique_customers,
+  count(*) as orders
+from clean
+group by 1
+order by 1
+    );
+  
+  
+[0m02:00:13.943851 [debug] [Thread-1 (]: SQL status: OK in 0.149 seconds
+[0m02:00:13.951449 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_ecommerce.mart_daily_sales"
+[0m02:00:13.951955 [debug] [Thread-1 (]: On model.dbt_ecommerce.mart_daily_sales: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "ecommerce", "target_name": "dev", "node_id": "model.dbt_ecommerce.mart_daily_sales"} */
+alter table "ecommerce"."main"."mart_daily_sales__dbt_tmp" rename to "mart_daily_sales"
+[0m02:00:13.958263 [debug] [Thread-1 (]: SQL status: OK in 0.006 seconds
+[0m02:00:13.975382 [debug] [Thread-1 (]: On model.dbt_ecommerce.mart_daily_sales: COMMIT
+[0m02:00:13.976171 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_ecommerce.mart_daily_sales"
+[0m02:00:13.976678 [debug] [Thread-1 (]: On model.dbt_ecommerce.mart_daily_sales: COMMIT
+[0m02:00:13.987161 [debug] [Thread-1 (]: SQL status: OK in 0.010 seconds
+[0m02:00:13.995352 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_ecommerce.mart_daily_sales"
+[0m02:00:13.996179 [debug] [Thread-1 (]: On model.dbt_ecommerce.mart_daily_sales: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "ecommerce", "target_name": "dev", "node_id": "model.dbt_ecommerce.mart_daily_sales"} */
+
+      drop table if exists "ecommerce"."main"."mart_daily_sales__dbt_backup" cascade
+    
+[0m02:00:13.998799 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m02:00:14.001928 [debug] [Thread-1 (]: On model.dbt_ecommerce.mart_daily_sales: Close
+[0m02:00:14.004573 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3ba6047e-c142-4f78-b3e4-22e459554a2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015742511010>]}
+[0m02:00:14.005396 [info ] [Thread-1 (]: 1 of 2 OK created sql table model main.mart_daily_sales ........................ [[32mOK[0m in 0.27s]
+[0m02:00:14.006592 [debug] [Thread-1 (]: Finished running node model.dbt_ecommerce.mart_daily_sales
+[0m02:00:14.007212 [debug] [Thread-1 (]: Began running node model.dbt_ecommerce.stg_orders
+[0m02:00:14.007855 [info ] [Thread-1 (]: 2 of 2 START sql view model main.stg_orders .................................... [RUN]
+[0m02:00:14.008899 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_ecommerce.mart_daily_sales, now model.dbt_ecommerce.stg_orders)
+[0m02:00:14.009517 [debug] [Thread-1 (]: Began compiling node model.dbt_ecommerce.stg_orders
+[0m02:00:14.012377 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_ecommerce.stg_orders"
+[0m02:00:14.013317 [debug] [Thread-1 (]: Began executing node model.dbt_ecommerce.stg_orders
+[0m02:00:14.036819 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_ecommerce.stg_orders"
+[0m02:00:14.037847 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_ecommerce.stg_orders"
+[0m02:00:14.038373 [debug] [Thread-1 (]: On model.dbt_ecommerce.stg_orders: BEGIN
+[0m02:00:14.038776 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m02:00:14.039728 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m02:00:14.040203 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_ecommerce.stg_orders"
+[0m02:00:14.040660 [debug] [Thread-1 (]: On model.dbt_ecommerce.stg_orders: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "ecommerce", "target_name": "dev", "node_id": "model.dbt_ecommerce.stg_orders"} */
+
+  
+  create view "ecommerce"."main"."stg_orders__dbt_tmp" as (
+    
+
+with raw as (
+  select *
+  from read_parquet('D:/Timepass Projects/Ecommerce Realtime/parquet/parquet/orders.parquet')
+)
+
+select
+  invoiceno,
+  stockcode,
+  description,
+  try_cast(quantity as integer) as quantity,
+  try_cast(invoicedate as timestamp) as invoicedate,
+  try_cast(unitprice as double) as unitprice,
+  try_cast(customerid as integer) as customerid,
+  country
+from raw
+  );
+
+[0m02:00:14.043396 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m02:00:14.046743 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_ecommerce.stg_orders"
+[0m02:00:14.047225 [debug] [Thread-1 (]: On model.dbt_ecommerce.stg_orders: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "ecommerce", "target_name": "dev", "node_id": "model.dbt_ecommerce.stg_orders"} */
+alter view "ecommerce"."main"."stg_orders__dbt_tmp" rename to "stg_orders"
+[0m02:00:14.048140 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m02:00:14.049826 [debug] [Thread-1 (]: On model.dbt_ecommerce.stg_orders: COMMIT
+[0m02:00:14.050288 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_ecommerce.stg_orders"
+[0m02:00:14.051269 [debug] [Thread-1 (]: On model.dbt_ecommerce.stg_orders: COMMIT
+[0m02:00:14.066092 [debug] [Thread-1 (]: SQL status: OK in 0.014 seconds
+[0m02:00:14.069231 [debug] [Thread-1 (]: Using duckdb connection "model.dbt_ecommerce.stg_orders"
+[0m02:00:14.069859 [debug] [Thread-1 (]: On model.dbt_ecommerce.stg_orders: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "ecommerce", "target_name": "dev", "node_id": "model.dbt_ecommerce.stg_orders"} */
+
+      drop view if exists "ecommerce"."main"."stg_orders__dbt_backup" cascade
+    
+[0m02:00:14.070769 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m02:00:14.072445 [debug] [Thread-1 (]: On model.dbt_ecommerce.stg_orders: Close
+[0m02:00:14.073125 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3ba6047e-c142-4f78-b3e4-22e459554a2d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000157422C5C80>]}
+[0m02:00:14.073831 [info ] [Thread-1 (]: 2 of 2 OK created sql view model main.stg_orders ............................... [[32mOK[0m in 0.06s]
+[0m02:00:14.075261 [debug] [Thread-1 (]: Finished running node model.dbt_ecommerce.stg_orders
+[0m02:00:14.077229 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:00:14.077660 [debug] [MainThread]: On master: BEGIN
+[0m02:00:14.077986 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m02:00:14.078721 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m02:00:14.079097 [debug] [MainThread]: On master: COMMIT
+[0m02:00:14.079453 [debug] [MainThread]: Using duckdb connection "master"
+[0m02:00:14.079812 [debug] [MainThread]: On master: COMMIT
+[0m02:00:14.080612 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m02:00:14.081043 [debug] [MainThread]: On master: Close
+[0m02:00:14.081575 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m02:00:14.082251 [debug] [MainThread]: Connection 'create_ecommerce_main' was properly closed.
+[0m02:00:14.082592 [debug] [MainThread]: Connection 'list_ecommerce_main' was properly closed.
+[0m02:00:14.082882 [debug] [MainThread]: Connection 'model.dbt_ecommerce.stg_orders' was properly closed.
+[0m02:00:14.083272 [info ] [MainThread]: 
+[0m02:00:14.083987 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 0.60 seconds (0.60s).
+[0m02:00:14.085669 [debug] [MainThread]: Command end result
+[0m02:00:14.108145 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Timepass Projects\Ecommerce Realtime\dbt\target\manifest.json
+[0m02:00:14.113325 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Timepass Projects\Ecommerce Realtime\dbt\target\semantic_manifest.json
+[0m02:00:14.121168 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\Timepass Projects\Ecommerce Realtime\dbt\target\run_results.json
+[0m02:00:14.122066 [info ] [MainThread]: 
+[0m02:00:14.123021 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m02:00:14.124114 [info ] [MainThread]: 
+[0m02:00:14.125353 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m02:00:14.130311 [debug] [MainThread]: Command `dbt run` succeeded at 02:00:14.130044 after 2.24 seconds
+[0m02:00:14.130946 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015741D29450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001574259BA40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015741E7DC50>]}
+[0m02:00:14.131579 [debug] [MainThread]: Flushing usage events
+[0m02:00:15.276331 [debug] [MainThread]: An error was encountered while trying to flush usage events

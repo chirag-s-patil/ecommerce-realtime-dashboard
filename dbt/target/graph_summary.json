@@ -1,0 +1,1 @@
+{"_invocation_id": "3ba6047e-c142-4f78-b3e4-22e459554a2d", "linked": {"0": {"name": "model.dbt_ecommerce.stg_orders", "type": "model"}, "1": {"name": "model.dbt_ecommerce.mart_daily_sales", "type": "model"}}}
